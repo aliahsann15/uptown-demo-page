@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Mercedes GLC 300 - Uptown Rentals</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="Uptown Rent a Car Logo">
+        <button class="menu-toggle" type="button" data-open-menu aria-label="Open menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu-backdrop" data-menu-backdrop hidden></div>
+        <div class="header-menu" data-header-menu>
+            <button class="menu-close" type="button" data-close-menu aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Cars</a>
+                <a href="#">FAQ's</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+            <a class="header-phone" href="tel:+971586877777"><i class="fa-solid fa-phone"></i> +971 58 68 77777</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="hero">
+            <div id="hero-content">
+                <div>
+                    <span>Luxury SUV Rental in Dubai</span>
+                    <h1>Mercedes GLC 300</h1>
+                    <p>Comfort, style and everyday practicality in one premium SUV.</p>
+                    <h3>From <span class="dot">AED 800</span> / Day</h3>
+                    <button data-scroll-to-booking>Check Availability</button>
+                </div>
+                <div id="hero-stats">
+                    <p>250 KM / Day <span class="dot">&nbsp;&nbsp;·&nbsp;&nbsp;</span> 5 Seats <span class="dot">&nbsp;&nbsp;·&nbsp;&nbsp;</span> Automatic <span class="dot">&nbsp;&nbsp;·&nbsp;&nbsp;</span> Free Delivery</p>
+                </div>
+            </div>
+            <img src="assets/Mercedes-GLC-300.png" alt="Mercedes GLC 300">
+        </section>
+
+        <!-- Car gallery and short description -->
+        <section id="car-gallery">
+            <div class="section-heading">
+                <span>Car Gallery</span>
+                <h2>Mercedes GLC 300</h2>
+                <p>A premium SUV built for comfortable everyday driving in Dubai.</p>
+                <p>Browse the interior and exterior before requesting your rental.</p>
+            </div>
+
+            <div class="gallery-layout">
+                <div class="gallery-frame">
+                    <button class="gallery-arrow" type="button" data-gallery-prev aria-label="Previous image">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <img id="gallery-image" src="assets/gallery1.jpg" alt="Mercedes GLC 300 gallery image 1">
+                    <button class="gallery-arrow" type="button" data-gallery-next aria-label="Next image">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="gallery-previews" aria-label="Mercedes GLC 300 gallery previews">
+                    <button class="gallery-preview active" type="button" data-gallery-preview="0" aria-label="Show gallery image 1">
+                        <img src="assets/gallery1.jpg" alt="">
+                    </button>
+                    <button class="gallery-preview" type="button" data-gallery-preview="1" aria-label="Show gallery image 2">
+                        <img src="assets/gallery2.jpg" alt="">
+                    </button>
+                    <button class="gallery-preview" type="button" data-gallery-preview="2" aria-label="Show gallery image 3">
+                        <img src="assets/gallery3.jpg" alt="">
+                    </button>
+                    <button class="gallery-preview" type="button" data-gallery-preview="3" aria-label="Show gallery image 4">
+                        <img src="assets/gallery4.jpg" alt="">
+                    </button>
+                    <button class="gallery-preview" type="button" data-gallery-preview="4" aria-label="Show gallery image 5">
+                        <img src="assets/gallery5.jpg" alt="">
+                    </button>
+                </div>
+
+                <div class="gallery-summary">
+                    <h3>From <span class="dot">AED 800</span> / Day</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-gauge-high"></i> 250 KM included per day</li>
+                        <li><i class="fa-solid fa-truck-fast"></i> Free delivery</li>
+                        <li><i class="fa-solid fa-users"></i> Seats: <strong>4</strong></li>
+                        <li><i class="fa-solid fa-gears"></i> Transmission: <strong>Automatic</strong></li>
+                        <li><i class="fa-solid fa-car-side"></i> Engine: <strong>V8</strong></li>
+                        <li><i class="fa-solid fa-spray-can-sparkles"></i> Clean and ready before handover</li>
+                        <li><i class="fa-solid fa-screwdriver-wrench"></i> Regularly serviced and inspected</li>
+                        <li><i class="fa-solid fa-snowflake"></i> Chilled AC and comfortable interior</li>
+                    </ul>
+                    <div class="gallery-actions">
+                        <button data-scroll-to-booking>Check Availability</button>
+                        <button class="whatsapp-button" type="button" data-open-whatsapp-form>
+                            <i class="fa-brands fa-whatsapp"></i> Check on WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rental details customers usually need -->
+        <section id="rental-details">
+            <div class="section-heading">
+                <span>Rental Details</span>
+                <h2>Before You Book</h2>
+                <p>Key details customers usually check before renting the Mercedes-Benz GLC 300.</p>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <i class="fa-solid fa-id-card"></i>
+                    <h3>Documents Required</h3>
+                    <p>Valid driving license, Emirates ID or passport, and visa entry details for visitors.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Insurance</h3>
+                    <p>Standard rental insurance is included. Extra coverage can be confirmed with Uptown.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h3>Security Deposit</h3>
+                    <p>Deposit amount and refund timeline are confirmed by the Uptown team before booking.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-road"></i>
+                    <h3>Mileage</h3>
+                    <p>250 KM included per day. Additional mileage charges can be confirmed before rental.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Delivery</h3>
+                    <p>Free delivery is available in Dubai, including hotel, residence, and airport handover.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h3>Minimum Age</h3>
+                    <p>Driver age and license history requirements are confirmed during availability check.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Payment</h3>
+                    <p>Rental payment options and deposit method are shared before confirming the booking.</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-gas-pump"></i>
+                    <h3>Fuel, Tolls & Fines</h3>
+                    <p>Fuel policy, Salik tolls, parking, and traffic fines are explained before handover.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Availability / booking section -->
+        <section id="booking">
+            <div class="booking-copy">
+                <span>Availability</span>
+                <h2>Check Availability</h2>
+                <h3>Mercedes-Benz GLC 300</h3>
+            </div>
+
+            <form id="availability-form" class="booking-form">
+                <label>
+                    Pickup Date
+                    <input type="date" name="pickup_date" required>
+                </label>
+                <label>
+                    Return Date
+                    <input type="date" name="return_date" required>
+                </label>
+                <label>
+                    Name
+                    <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label>
+                    Phone / WhatsApp
+                    <input type="tel" name="phone" placeholder="Your number" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="Optional">
+                </label>
+                <button type="submit">Request Availability</button>
+            </form>
+
+            <div id="success-modal" class="success-modal" hidden>
+                <div class="success-state" role="dialog" aria-modal="true" aria-labelledby="success-title">
+                    <h2 id="success-title">Request Received</h2>
+                    <p>Thanks. Your request for the <strong>Mercedes-Benz GLC 300</strong> has been received.</p>
+                    <p>The Uptown team will contact you to confirm availability and rental details.</p>
+                    <button type="button" data-reset-form>Done</button>
+                </div>
+            </div>
+
+            <div id="whatsapp-modal" class="success-modal" hidden>
+                <form id="whatsapp-form" class="whatsapp-form" role="dialog" aria-modal="true" aria-labelledby="whatsapp-title">
+                    <div class="modal-title-row">
+                        <h2 id="whatsapp-title">Ask on WhatsApp</h2>
+                        <button class="modal-close" type="button" data-close-whatsapp-form aria-label="Close WhatsApp form">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <p>Send Uptown the details they usually need to answer quickly.</p>
+
+                    <label>
+                        Full Name
+                        <input type="text" name="full_name" placeholder="Your full name">
+                    </label>
+                    <label>
+                        Pickup Date
+                        <input type="date" name="pickup_date">
+                    </label>
+                    <label>
+                        Return Date
+                        <input type="date" name="return_date">
+                    </label>
+                    <label>
+                        Delivery Location
+                        <input type="text" name="delivery_location" placeholder="Hotel, residence, airport, or area">
+                    </label>
+                    <label>
+                        Driver Status
+                        <div class="custom-select" data-custom-select>
+                            <input type="hidden" name="driver_status" value="Dubai resident">
+                            <button class="custom-select-button" type="button" aria-haspopup="listbox" aria-expanded="false">
+                                <span>Dubai resident</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="custom-select-list" role="listbox" hidden>
+                                <button class="custom-select-option active" type="button" role="option" aria-selected="true" data-value="Dubai resident">Dubai resident</button>
+                                <button class="custom-select-option" type="button" role="option" aria-selected="false" data-value="Visitor / tourist">Visitor / tourist</button>
+                                <button class="custom-select-option" type="button" role="option" aria-selected="false" data-value="Not sure yet">Not sure yet</button>
+                            </div>
+                        </div>
+                    </label>
+                    <label>
+                        Main Question
+                        <textarea name="question" rows="4" placeholder="Ask about availability, deposit, documents, delivery, insurance, mileage, or total price."></textarea>
+                    </label>
+                    <button type="submit">
+                        <i class="fa-brands fa-whatsapp"></i> Open WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="final-cta">
+            <h2>Ready to Rent the GLC 300?</h2>
+            <p>Choose your dates and send your request.</p>
+            <h3>From <span class="dot">AED 800</span> / Day</h3>
+            <button data-scroll-to-booking>Check Availability</button>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <img src="assets/logo.png" alt="Uptown Rent a Car Logo">
+            <div id="socials">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-snapchat"></i>
+            </div>
+        </div>
+        <div id="footer-links-container">
+            <h4>UPTOWN RENT A CAR LLC</h4>
+            <div id="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">FAQ's</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Insurance</a>
+            </div>
+        </div>
+        <div id="contact-container">
+            <h4>CONTACT US</h4>
+            <div id="contact-info">
+                <p><a href="tel:+972586877777"><i class="fa-solid fa-phone"></i> +972 58 68 77777</a></p>
+                <p><a href="https://wa.me/972586877777" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +972 58 68 77777</a></p>
+                <p><a href="mailto:info@uptownrentals.com"><i class="fa-solid fa-envelope"></i> info@uptownrentals.com</a></p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Business%20Bay%20Head%20Office%20Dubai" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i> Business Bay Head Office</a></p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Palm%20Hotel%20Office%20Dubai" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i> Palm Hotel Office</a></p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=W%20Hotel%20Office%20Dubai" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i> W Hotel Office</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
