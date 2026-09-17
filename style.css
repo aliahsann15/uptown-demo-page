@@ -197,6 +197,23 @@ body.menu-open {
     margin-top: 2rem;
 }
 
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+#hero-content .hero-actions .whatsapp-button {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    padding: calc(0.7rem - 2px) 1.25rem;
+}
+
+#hero-content .hero-actions .whatsapp-button:hover {
+    background-color: var(--accent);
+}
+
 .dot {
     color: var(--accent) !important;
     font-weight: 900;
@@ -398,6 +415,16 @@ body.menu-open {
 
 .gallery-actions button {
     width: fit-content;
+}
+
+.gallery-summary .gallery-actions .whatsapp-button {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    padding: calc(0.7rem - 2px) 1.25rem;
+}
+
+.gallery-summary .gallery-actions .whatsapp-button:hover {
+    background-color: var(--accent);
 }
 
 .whatsapp-button {
@@ -1180,6 +1207,7 @@ footer {
     }
 
     .gallery-actions button,
+    .hero-actions button,
     .whatsapp-button,
     .booking-form button,
     .success-state button,

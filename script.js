@@ -33,7 +33,7 @@ const successModal = document.querySelector("#success-modal");
 const resetFormButton = document.querySelector("[data-reset-form]");
 const whatsappModal = document.querySelector("#whatsapp-modal");
 const whatsappForm = document.querySelector("#whatsapp-form");
-const openWhatsappFormButton = document.querySelector("[data-open-whatsapp-form]");
+const openWhatsappFormButtons = document.querySelectorAll("[data-open-whatsapp-form]");
 const closeWhatsappFormButton = document.querySelector("[data-close-whatsapp-form]");
 const customSelect = document.querySelector("[data-custom-select]");
 const headerMenu = document.querySelector("[data-header-menu]");
@@ -169,8 +169,10 @@ resetFormButton.addEventListener("click", () => {
     successModal.hidden = true;
 });
 
-openWhatsappFormButton.addEventListener("click", () => {
-    whatsappModal.hidden = false;
+openWhatsappFormButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        whatsappModal.hidden = false;
+    });
 });
 
 closeWhatsappFormButton.addEventListener("click", () => {
